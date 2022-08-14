@@ -21,16 +21,9 @@ public class TicketController {
 
 	@PostMapping(value = "/bookTicket", consumes = "application/json", produces = "application/json")
 	public ResponseEntity<String> getTicket(@RequestBody Passanger passanger) {
+		return null;
 
-		String msg=ticketService.ticketStatus(passanger);
-
-		if (msg == null) {
-
-			return null;
-		}else {
-			
-			return new ResponseEntity<String>(msg,HttpStatus.OK);
-		}
+		
 
 	}
 }
