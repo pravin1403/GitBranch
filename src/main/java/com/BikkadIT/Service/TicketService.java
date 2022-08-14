@@ -60,7 +60,7 @@ public class TicketService {
 			
 			msg2="Number of Passangers Details"+list;
 			
-			return msg1+msg2;
+			return msg2;
 		}
 		
 		return null;
